@@ -1,5 +1,4 @@
 ---
-
 interface Props {
 	title: string;
 }
@@ -12,24 +11,6 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="theme-color" id="metaThemeColor" content="#f1f5f9">
-		<script>
-			function setThemeColor() {
-			  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-			  const metaThemeColor = document.querySelector("meta[name=theme-color]");
-			  
-			  if (isDarkMode) {
-				metaThemeColor.setAttribute("content", "#020617");
-			  } else {
-				metaThemeColor.setAttribute("content", "#f1f5f9");
-			  }
-			}
-		  
-			// Initial set
-			setThemeColor();
-		  
-			// Listen for changes
-			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setThemeColor);
-		  </script>
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"

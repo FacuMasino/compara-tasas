@@ -4,6 +4,7 @@ import Card from "../components/Card.astro";
 import Row from "../components/Row.astro";
 import Dolares from "../components/Dolares.astro";
 import Github from "../assets/github.svg";
+import ThemeSwitch from "../components/ThemeSwitch.astro";
 
 // Define your API endpoint and API keys
 const apiEndpoint =
@@ -42,8 +43,9 @@ const filteredBuenbitData = sortedData.filter(
 <Layout title="Compara Tasas">
   <div
     id="containter"
-    class="container mx-auto mx-4 px-4 my-6 max-w-sm sm:max-w-sm md:max-w-md lg:max-w-lg"
+    class=" container mx-auto mx-4 px-4 my-6 max-w-sm sm:max-w-sm md:max-w-md lg:max-w-lg"
   >
+    <ThemeSwitch/>
     <h1 class="text-3xl text-gray-900 font-bold my-6 dark:text-gray-100">
       ¡Elegí el fondo con <span class="text-indigo-500">más rendimientos</span> para
       vos!
